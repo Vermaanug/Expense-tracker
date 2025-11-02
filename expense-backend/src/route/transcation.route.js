@@ -6,8 +6,9 @@ const transcationRouter = express.Router();
 transcationRouter.get("/", getAllTranscations)
 transcationRouter.get("/:id", getTranscationById)
 transcationRouter.post("/save", saveTranscation)
-transcationRouter.delete("/delete/:id", deleteTranscation)
 transcationRouter.put("/update/:id", updateTranscation)
+transcationRouter.delete("/delete/:id", deleteTranscation)
+
 
 
 

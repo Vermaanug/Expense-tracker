@@ -1,3 +1,5 @@
+import validator from "validator";
+
 export const validatePartialTranscationData = (data) => {
   const errors = {};
   

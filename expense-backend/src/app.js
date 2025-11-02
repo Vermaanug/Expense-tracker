@@ -1,8 +1,13 @@
 import 'dotenv/config';
 import express from 'express';
 import ConnectDB from "./db/ConnectDb.js";
+import transcationRouter from './route/transcation.route.js';
 
 const app = express();
+
+app.use(express.json())
+
+app.use("/api/transcation" , transcationRouter)
 
 
 ConnectDB().then(() => {
